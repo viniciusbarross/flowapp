@@ -1,5 +1,6 @@
 package com.example.flowapp.ui.adapter
 
+import android.graphics.Color
 import android.view.LayoutInflater
 
 import android.view.View
@@ -39,6 +40,7 @@ class TransactionAdapter : ListAdapter<Transaction, TransactionAdapter.Transacti
             textViewType.text = transaction.type
             textViewDetail.text = transaction.detail
             textViewValue.text = "R$ ${"%.2f".format(transaction.value)}"
+            textViewValue.setTextColor(if(transaction.type.equals("Crédito")) { Color.GREEN} else {Color.RED})
             textViewDate.text = transaction.date
         }
     }

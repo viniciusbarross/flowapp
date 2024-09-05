@@ -82,7 +82,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onNothingSelected(parent: AdapterView<*>) {
-                // Handle case when nothing is selected if needed
+
             }
         }
     }
@@ -144,12 +144,22 @@ class MainActivity : AppCompatActivity() {
 
     private fun handleCheckBalance() {
         val balance = repository.getBalance()
-        AlertDialog.Builder(this)
+        val message = "Saldo atual: R$ ${"%.2f".format(balance)}"
+
+        val color = if (balance >= 0) {
+            android.graphics.Color.GREEN
+        } else {
+            android.graphics.Color.RED
+        }
+
+        val alertDialog = AlertDialog.Builder(this)
             .setTitle("Saldo")
-            .setMessage("Saldo atual: R$ ${"%.2f".format(balance)}")
+            .setMessage(message)
             .setPositiveButton("OK", null)
             .show()
+        alertDialog.findViewById<TextView>(android.R.id.message)?.setTextColor(color)
     }
+
 
     private fun clearFields() {
         editTextValor.text.clear()
