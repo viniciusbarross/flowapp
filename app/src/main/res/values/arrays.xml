@@ -1,0 +1,18 @@
+<resources>
+    <string-array name="tipo_array">
+        <item>Crédito</item>
+        <item>Débito</item>
+    </string-array>
+
+    <string-array name="detalhe_credito_array">
+        <item>Salário</item>
+        <item>Extras</item>
+    </string-array>
+
+    <string-array name="detalhe_debito_array">
+        <item>Alimentação</item>
+        <item>Transporte</item>
+        <item>Saúde</item>
+        <item>Moradia</item>
+    </string-array>
+</resources>

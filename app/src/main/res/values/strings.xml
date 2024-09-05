@@ -1,0 +1,20 @@
+<resources>
+    <!-- Strings for the app -->
+    <string name="app_name">Fluxo de Caixa</string>
+    <string name="button_lanc">Lançar</string>
+    <string name="button_ver_lancamentos">Ver Lançamentos</string>
+    <string name="button_saldo">Saldo</string>
+    <string name="spinner_tipo_credito">Crédito</string>
+    <string name="spinner_tipo_debito">Débito</string>
+    <string name="spinner_detalhe_salario">Salário</string>
+    <string name="spinner_detalhe_extras">Extras</string>
+    <string name="spinner_detalhe_alimentacao">Alimentação</string>
+    <string name="spinner_detalhe_transporte">Transporte</string>
+    <string name="spinner_detalhe_saude">Saúde</string>
+    <string name="spinner_detalhe_moradia">Moradia</string>
+    <string name="title_launch">Lançar Transação</string>
+    <string name="title_view_launches">Lançamentos</string>
+    <string name="title_check_balance">Saldo</string>
+    <string name="message_check_balance">Saldo atual: %s</string>
+    <string name="message_no_transactions">Nenhum lançamento encontrado</string>
+</resources>
